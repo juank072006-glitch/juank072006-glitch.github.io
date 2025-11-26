@@ -1,0 +1,87 @@
+/* Contenedor de la imagen de fondo */
+.background-image-container {
+    /* URL de tu imagen de fondo real. ¡Asegúrate de reemplazarla! */
+    background-image: url('../img/HUÉRFANO-Portada.png');
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    color: white; /* Texto blanco para contraste */
+}
+
+/* Estilo para el logo/nombre en la navegación */
+.navbar-brand-custom {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+.navbar-brand-custom .small-subtitle {
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+    margin-left: 27px;
+    position: relative;
+    top: -13px;
+    display: inline-block;
+}
+.title-huerfano {
+    font-size: 7rem; 
+    font-weight: 900;
+    line-height: 0.9;
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos para el subtítulo "UN ANTIHÉROE" */
+.subtitle-antiheroe {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+    z-index: 2;
+}
+
+/* Contenedor del contenido principal para centrar */
+.main-content {
+    /* Mantenemos las propiedades Flexbox para centrar el contenido */
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+    /* >>> AÑADIDO/MODIFICADO PARA FORZAR EL SCROLL <<< */
+    /* Establece una altura mínima que exceda la altura de la ventana (100vh) */
+    min-height: 100vh; 
+}
+
+/* Estilo para el botón */
+.btn-custom {
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 30px;
+    font-size: 1.6rem;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 3; /* Para que esté sobre el resto del contenido */
+}
+
+.btn-custom:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+/* Media query para ajustar tamaños en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .title-huerfano {
+        font-size: 4rem;
+    }
+    .subtitle-antiheroe {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+}

@@ -1,0 +1,89 @@
+body {
+    background-color: #212529; 
+    color: #f1f1f1; 
+    font-family: 'Roboto', sans-serif; 
+}
+.background-image-container {
+    /* URL de tu imagen de fondo real. ¡Asegúrate de reemplazarla! */ 
+    background-image: url('../img/niño.png');
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    color: white; /* Texto blanco para contraste */
+}
+.navbar-brand-custom {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+.navbar-brand-custom .small-subtitle {
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+    margin-left: 27px;
+    position: relative;
+    top: -13px;
+    display: inline-block;
+}
+.act-button {
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-color: #fff;
+    color: #fff;
+    transition: all 0.2s;
+}
+.act-button:hover {
+    background-color: white;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .act-title {
+        font-size: 3.5rem;
+    }
+}
+.marca-personalizada {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.marca-personalizada .small-subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    display: block;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem !important;
+    letter-spacing: 0.05rem;
+}
+
+.enlaces-navegacion-personalizados .nav-link {
+    font-size: 1.1rem !important;
+    letter-spacing: 0.05rem;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.pie-pagina {
+   
+    background-color: #1a1a1a !important;
+
+    margin-top: 500px !important;
+}
+
+.pie-pagina .texto-mudo-personalizado {
+    color: #999 !important;
+    font-size: 0.85rem;
+}
+
+.pie-pagina .text-decoration-none {
+    color: #ccc !important;
+}
